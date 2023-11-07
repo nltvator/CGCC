@@ -12,7 +12,7 @@ driver.get("https://www.cgc.edu/")
 #Let's see what CGC is about.
 driver.get("https://www.cgc.edu/about-us")
 
-#We need to wait for the webpage to load, so we use this line of code to do so.
+#We need to wait for the webpage to load, so we use this line of code to do so. Any time you see a space in the class name, replace it with a period.
 WebDriverWait(driver, 1).until(EC.presence_of_element_located((By.CLASS_NAME, "text-center.lead")))
 
 #Let's get the text from the page. We're going to use the HTML class to get that info.
